@@ -303,7 +303,7 @@ ol {
   width: 17px;
   height: 17px;
   margin: auto;
-  border: 1px solid #000; /* именно так в браузере у меня показывается верно как по макету */
+  border: 1px solid #000; /* именно так в браузере у меня показывается как по макету */
   outline: 1px solid #000;
   outline-offset: -1px;
   background-color: #fff;
