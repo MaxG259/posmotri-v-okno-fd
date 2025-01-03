@@ -98,7 +98,7 @@ ol {
   gap: 26px;
 }
 
-.result__video-container{
+.result__video-container {
   position: relative;
   max-height: 386px;
 }
@@ -188,7 +188,6 @@ ol {
   text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
   /* Добавляем троеточия в конце предложения, если текст не помещается в блок */
 }
@@ -210,11 +209,6 @@ ol {
 
 .search-form__fieldset {
   border: none;
-}
-
-.search-form__checkbox-list {
-  display: flex;
-  gap: 15px;
 }
 
 .search-form__label {
