@@ -69,8 +69,8 @@ ol {
   grid-template-columns: 711px 399px;
   margin: auto;
   gap: 30px;
-  min-height: 534px;
-  padding: 133px 30px;
+  /* min-height: 534px; */
+  /* padding: 133px 30px; */
 }
 
 .result {
@@ -110,7 +110,9 @@ ol {
 
 .result__video-container {
   position: relative;
-  max-height: 386px;
+  /* max-height: 386px; */
+  inline-size: 711px;
+  block-size: 386px;
 }
 
 .result__video {
@@ -164,9 +166,9 @@ ol {
   color: white;
 }
 
-/*.content__card-link_current {
-  background-color: #545050; в ТЗ ПР было задание это сделать, но зачем я не понял, не стал оставлять
-}*/
+.content__card-link_current {
+  background-color: #545050;
+}
 
 .content__card-link:active {
   background-color: #545050;
@@ -210,10 +212,15 @@ ol {
   font-size: 18px;
   color: #fff;
   line-height: 16.2px;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  /* white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* Добавляем троеточия в конце предложения, если текст не помещается в блок */
+  Добавляем троеточия в конце предложения, если текст не помещается в блок */
   /* line-clamp: 3; так и не понял как оно работает*/
 }
 
@@ -232,13 +239,14 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: #FFFFFFB2;
-  border-bottom: 1px solid currentColor;
-  border-top: 1px solid currentColor;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
   border-right: none;
   border-left: none;
   inline-size: 225px;
   block-size: 27px;
+  appearance: none;
 }
 
 .search-form__textfield:focus {
